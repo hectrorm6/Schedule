@@ -19,8 +19,8 @@ class GeminiEngine(AIEngineInterface):
             return
         
         genai.configure(api_key=api_key)
-        # Usamos el modelo que tu consola muestra con cuota activa
-        self.model = genai.GenerativeModel('gemini-2.5-flash')
+        # Usamos el modelo correcto
+        self.model = genai.GenerativeModel('gemini-1.5-flash')
 
     async def generate_response(self, prompt: str, history: List[Dict[str, str]] = None) -> str:
         try:
