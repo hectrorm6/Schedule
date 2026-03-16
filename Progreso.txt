@@ -1,0 +1,11 @@
+El "Cerebro" de la IA (Gemini 2.5 Flash): Pasamos del modo "loro" (que repetía tus mensajes) a integrar la API real de Google Gemini. Solucionamos problemas de versiones y límites de cuota hasta dar con el modelo 2.5 Flash que funciona a la perfección.
+
+Arquitectura Preparada (Antigravity): Generamos los prompts maestros para tu IA de desarrollo, dejando la base del código estructurada con FastAPI para:
+
+Extraer información clave de los textos.
+
+Manejar imágenes enviadas por Telegram.
+
+Guardar el registro en una base de datos SQLite (test.db).
+
+Despliegue en la Nube 24/7 (Railway): Subiste tu código a GitHub y, tras pelear con el sistema de construcción de Railway (Railpack), le inyectamos un Dockerfile puro. El resultado fue un "Deployment Successful". Tu bot ahora mismo está vivo en internet y te responderá en Telegram aunque tengas el PC apagado.
